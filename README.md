@@ -24,9 +24,8 @@ Temporal GNN has 28 different types of layers available. The architecture is dif
 
 ### Implementation
 <br> Step 1: Installation of pytorch geometric temporal, an extension to pytorch geometric.
-<br> Step 2: Dataset called METRLADatasetLoader is imported which contains the data of 207 sensors. The dataset is
-available in 'Diffusion Convolutional Recurrent NN' paper.
-<br> Step 3: The features available at each node available is traffic speed along with time. (12*5= 60 min)
+<br> Step 2: Dataset called METRLADatasetLoader is imported which contains the data of 207 sensors.
+<br> Step 3: The features available at each node is traffic speed along with time. (12*5= 60 min)
 * The labels become features for the next time step. The labels are predicted for 12 future time steps.
 * The model A3TGCN (Attention Temporal GCN) is created and trained. The A3TGCN layer's output is used for predictions, the return value of temporal GNN is an embedding that can be used for next time step 't'.
 <br>

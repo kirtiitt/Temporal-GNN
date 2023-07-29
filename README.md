@@ -30,9 +30,24 @@ Step 4: A random sensor and time step is chosen for visualisation and compared w
 
 <br> <br>
 ### Evaluation: 
-The model fails to be properly trained due of lack of resources. Hence accurate observations are not observed with MSE= 0.7 and the visualization at end shows deviation from the actual curve. 
+The model fails to be properly trained due of lack of resources. Hence accurate observations are not observed with MSE= 0.68 and the visualization at end shows deviation from the actual curve. The following curve is when one hidden layer is used.
 ![image](https://github.com/kirtiitt/Temporal-GNN/assets/137528591/daf62cf7-c0d0-4b6f-856b-6b503f671ea8)
 
+When two hidden layers are used the MSE is 0.71 but the curve shows some improvement as below. Performing a bit better in the dips of the curve but still not accurate. The architecture used decreases hidden layer sizes, subsequently resulting in a straight line. So we now try to follow the architecture where hidden layer sizes increase in the next step.
+![image](https://github.com/kirtiitt/Temporal-GNN/assets/137528591/18cc24e2-c6e7-4b1d-92ae-3df8f9a8e878)
+
+The final code has four hidden layers and is the maximum that this model performs at present in the project. The predictions made don't help in the improvement of the MSE which is again 0.68, so this is where the project is halted. Performance observed is similar to the first model, the one with single hidden layer with slight variation.
+![image](https://github.com/kirtiitt/Temporal-GNN/assets/137528591/28beb64c-8719-4870-bbac-481a47c4cd78)
+
+
+
+More layers can be added to improve complexity but training for a larger dataset is the first option to optimize the model and reduce MSE. 
+The complex dataset in form of graphs also makes it difficult to gather most efficient features for the model. Though, GNN mostly covers this problem.
+<br> <br>
+
+### Major Challenges
+1. The google collaboratory lab kept runnning out of memory and could never complete the training.
+2. Running on local machine didn't help too. The local runtime ran on jupyter notebook using mac m1 chip. The lack of training is one of the main reasons of the model not performing accurately.
 <br> <br>
 Papers: <br>
 https://arxiv.org/pdf/2104.07788.pdf <br>

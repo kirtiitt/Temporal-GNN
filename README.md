@@ -1,11 +1,8 @@
-## Temporal-GNN
-<br>
-Objective:
+## Temporal-GNN <br>
+
+### Objective:
 <br> In the google maps or other map services currently available, we're only able to access the traffic at the given moment of time and not in the future. This model predicts the 12 future time stamps (approx 60 min). The dataset used consists of sensor data of the vehicle traffic while maps usually use mobile data and location services as their main features.
 <br> <br>
-
-Evaluation: The model fails to be properly trained due of lack of resources. Hence accurate observations are not observed with MSE= 0.7 and the visualization at end shows deviation from the actual curve. <br> <br>
-
 
 ### Strategy
 * Traffic signs, traffic lights and traffic (vehicles) are available features. The sensors record the speed of the traffic every five minutes and are taken as nodes.
@@ -30,6 +27,11 @@ Temporal GNN has 28 different types of layers available. The architecture is dif
 * The model A3TGCN (Attention Temporal GCN) is created and trained. The A3TGCN layer's output is used for predictions, the return value of temporal GNN is an embedding that can be used for next time step 't'.
 <br>
 Step 4: A random sensor and time step is chosen for visualisation and compared with the actual data.
+
+<br> <br>
+### Evaluation: 
+The model fails to be properly trained due of lack of resources. Hence accurate observations are not observed with MSE= 0.7 and the visualization at end shows deviation from the actual curve. 
+![image](https://github.com/kirtiitt/Temporal-GNN/assets/137528591/daf62cf7-c0d0-4b6f-856b-6b503f671ea8)
 
 <br> <br>
 Papers: <br>

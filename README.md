@@ -47,7 +47,7 @@ The complex dataset in form of graphs also makes it difficult to gather most eff
 <br> <br>
 
 ### Major Challenges
-1. The google collaboratory lab kept runnning out of memory and could never complete the training.
+1. The google collaboratory lab kept runnning out of memory and could never complete the training for the large dataset. Hence a small training subset had to be used to check the working of the model.
 2. Running on local machine didn't help too. The local runtime ran on jupyter notebook using mac m1 chip. The lack of training is one of the main reasons of the model not performing accurately.
 <br> <br>
 Papers: <br>
